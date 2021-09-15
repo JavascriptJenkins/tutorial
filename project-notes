@@ -32,7 +32,7 @@ scp -i /Users/genreboy/Downloads/LightsailDefaultKey-us-east-2.pem /Users/genreb
 
 172-26-15-102
 
-curl -v http://172.26.15.102:8082/api/person/all
+curl -v http://172.26.15.102:8080/api/person/all
 
 curl -v http://3.21.225.172:8082/api/person/all
 
@@ -46,3 +46,7 @@ sudo lsof -i :8080
 
 sudo killall java -9
 
+http://localhost:8080/api/tree-736885__480.jpeg
+
+
+sudo nohup java -jar /web/server.jar &

@@ -6,8 +6,17 @@
     ## This project is using h2 database 
     ## The database will be filled at startup with data from data.sql
     ## spring.datasource.url defines the flatfile used to store our database data
-    ## this url will provide a ui for the database --> http://localhost:8080/h2-console
+    ## this url will provide a ui for the database -->
+    http://localhost:8080/api/h2-console
+    user name is: sa
+    password is: password
+    connection string is: jdbc:h2:file:./data/demo
+
     spring.datasource.username=sa
     spring.datasource.password=password
+
+## Serving images
+     images will be served like this:
+     http://localhost:8080/api/tree-736885__480.jpeg
 
     

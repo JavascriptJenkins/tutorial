@@ -2,14 +2,30 @@ DROP TABLE IF EXISTS real_estate;
 
 CREATE TABLE real_estate (
   id INT AUTO_INCREMENT  PRIMARY KEY,
-  address1 VARCHAR(250) NOT NULL,
-  address2 VARCHAR(250) DEFAULT NULL,
+  fname VARCHAR(250) NOT NULL,
+  lname VARCHAR(250) NOT NULL,
+  yrblt VARCHAR(250) NOT NULL,
+  isnew BOOLEAN NOT NULL,
+  sqft INT NOT NULL,
+  baths INT NOT NULL,
+  beds INT NOT NULL,
+  street VARCHAR(250) NOT NULL,
   city VARCHAR(250) NOT NULL,
   state VARCHAR(250) NOT NULL,
-  title_owner VARCHAR(250) NOT NULL
+  zip INT NOT NULL,
+  listing VARCHAR(250) NOT NULL
 );
 
-INSERT INTO real_estate (address1, address2, city, state, title_owner) VALUES
-  ('3032 Portland Ave', '', 'Minneapolis','MN','Dave Evans'),
-  ('178 Rose St', 'Apt 2', 'Portland','OR','Margaret McDonald'),
-  ('333 Rush Ave', 'Unit 7', 'New York','NY','Abdi Mallad');
+INSERT INTO real_estate (fname,
+                         lname,
+                         yrblt,
+                         isnew,
+                         sqft,
+                         baths,
+                         beds,
+                         street,
+                         city,
+                         state,
+                         zip,
+                         listing) VALUES
+  ('Dave','Evans','2018-06-06T22:45:52.247Z',true,6200,7,4,'1484 Massa Ct','Collierville','TN',38027,'MIDSOUTH RESIDENTIAL LLC');
