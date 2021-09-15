@@ -15,7 +15,7 @@ public class RealEstate {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     @JsonProperty
-    int id;
+    Long id;
 
     @JsonProperty
     String fname;
@@ -54,13 +54,6 @@ public class RealEstate {
     String listing;
 
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getFname() {
         return fname;
@@ -159,6 +152,13 @@ public class RealEstate {
         this.isnew = isnew;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
 
 
