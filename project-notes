@@ -49,6 +49,12 @@ sudo killall java -9
 http://localhost:8080/api/tree-736885__480.jpeg
 
 
-sudo nohup java -jar /web/server.jar &
+sudo nohup java -jar tutorialapp-0.0.1-SNAPSHOT.jar &
 
 http://localhost:8080/api/realestate/all?rows=10
+
+
+http://3.21.225.172:8080/api/person/all
+http://3.21.225.172:8080/api/realestate/getByRowAmount?rows=10
+http://3.21.225.172:8080/api/realestate/all
+http://3.21.225.172:8080/api/api/tree-736885__480.jpeg
