@@ -50,3 +50,5 @@ http://localhost:8080/api/tree-736885__480.jpeg
 
 
 sudo nohup java -jar /web/server.jar &
+
+http://localhost:8080/api/realestate/all?rows=10
