@@ -1,0 +1,48 @@
+ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
+
+
+ssh -i /Users/genreboy/Downloads/LightsailDefaultKey-us-east-2.pem ubuntu@3.21.225.172
+
+
+http://3.21.225.172:8080/manager/html
+
+http://3.21.225.172:8082/api/person/all
+
+
+sudo chmod 400 /Users/genreboy/Downloads/LightsailDefaultKey-us-east-2.pem
+
+
+
+
+ubuntu@ip-172-26-15-102:~$ java --version
+openjdk 11.0.11 2021-04-20
+OpenJDK Runtime Environment (build 11.0.11+9-Ubuntu-0ubuntu2.20.04)
+OpenJDK 64-Bit Server VM (build 11.0.11+9-Ubuntu-0ubuntu2.20.04, mixed mode, sharing)
+
+
+
+mkdir tutorialjava
+
+
+scp -i /path/my-key-pair.pem /path/my-file.txt ec2-user@my-instance-public-dns-name:path/
+
+
+scp -i /Users/genreboy/Downloads/LightsailDefaultKey-us-east-2.pem /Users/genreboy/IdeaProjects/tutorial/target/tutorialapp-0.0.1-SNAPSHOT.jar ubuntu@3.21.225.172:tutorialjava/
+
+
+172-26-15-102
+
+curl -v http://172.26.15.102:8082/api/person/all
+
+curl -v http://3.21.225.172:8082/api/person/all
+
+2021-09-14 17:15:14.107  INFO 72288 --- [           main] c.t.tutorialapp.TutorialappApplication   : Starting TutorialappApplication v0.0.1-SNAPSHOT using Java 11.0.11 on ip-172-26-15-102 with PID 72288 (/home/ubuntu/tutorialjava/tutorialapp-0.0.1-SNAPSHOT.jar started by root in /home/ubuntu/tutorialjava)
+
+
+
+lsof -i :<port number>
+
+sudo lsof -i :8080
+
+sudo killall java -9
+
