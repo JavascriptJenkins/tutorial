@@ -19,4 +19,10 @@
      images will be served like this:
      http://localhost:8080/api/tree-736885__480.jpeg
 
+    http://3.21.225.172:8080/api/person/all
+    http://3.21.225.172:8080/api/realestate/getByRowAmount?rows=10
+    http://3.21.225.172:8080/api/realestate/all
+    http://3.21.225.172:8080/api/tree-736885__480.jpeg
+    http://3.21.225.172:8080/api/api/h2-console
+
     
