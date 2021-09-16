@@ -53,7 +53,8 @@ public class RealEstate {
     @JsonProperty
     String listing;
 
-
+    @JsonProperty
+    String imageurl;
 
     public String getFname() {
         return fname;
@@ -160,8 +161,11 @@ public class RealEstate {
         this.id = id;
     }
 
+    public String getImageurl() {
+        return imageurl;
+    }
 
-
-
-
+    public void setImageurl(String imageUrl) {
+        this.imageurl = imageUrl;
+    }
 }

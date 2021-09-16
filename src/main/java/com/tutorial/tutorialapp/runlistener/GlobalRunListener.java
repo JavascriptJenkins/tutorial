@@ -6,16 +6,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tutorial.tutorialapp.model.RealEstate;
 import com.tutorial.tutorialapp.repo.RealEstateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
 import java.io.*;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -77,7 +73,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
         }
 
 
-        for(RealEstate realEstate: listRealEstate){
+        int houseIndex = 1;
+        for (RealEstate realEstate: listRealEstate) {
 
             RealEstate newObject = new RealEstate();
 
@@ -93,8 +90,9 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
             newObject.setState(realEstate.getState());
             newObject.setZip(realEstate.getZip());
             newObject.setListing(realEstate.getListing());
+            newObject.setImageurl(String.format("house-%d.jpg", houseIndex++));
 
-            realEstateRepository.save(realEstate);
+            realEstateRepository.save(newObject);
         }
 
 
