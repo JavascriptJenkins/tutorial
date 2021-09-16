@@ -51,9 +51,40 @@ public class RealEstate {
     int zip;
 
     @JsonProperty
+    int price;
+
+    @JsonProperty
+    String phone;
+
+    @JsonProperty
     String listing;
 
+    @JsonProperty
+    String imageurl;
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getImageurl() {
+        return imageurl;
+    }
+
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
+    }
 
     public String getFname() {
         return fname;

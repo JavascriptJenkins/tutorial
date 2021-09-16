@@ -12,6 +12,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38027,
+        "price":560000,
+        "phone": "(228)246-4920",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -27,6 +29,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38139,
+        "price":599000,
+        "phone": "(229)243-4960",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -42,6 +46,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":1199000,
+        "phone": "(222)984-1122",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -57,6 +63,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38017,
+        "price":1100000,
+        "phone": "(616)096-3603",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -72,6 +80,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38139,
+        "price":799000,
+        "phone": "(819)579-2275",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -87,6 +97,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":1199000,
+        "phone": "(923)625-6550",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -102,6 +114,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":1500000,
+        "phone": "(324)173-8930",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -117,6 +131,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38125,
+        "price":899000,
+        "phone": "(313)575-5002",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -132,6 +148,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38139,
+        "price":999000,
+        "phone": "(206)863-2598",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -147,6 +165,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":499000,
+        "phone": "(644)831-4804",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -162,6 +182,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38125,
+        "price":699000,
+        "phone": "(652)859-5851",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -177,6 +199,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38125,
+        "price":1000000,
+        "phone": "(707)884-3293",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -192,6 +216,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38139,
+        "price":1099000,
+        "phone": "(532)773-1437",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -207,6 +233,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":1199000,
+        "phone": "(660)900-6916",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -222,6 +250,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38125,
+        "price":1200000,
+        "phone": "(511)571-8091",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -237,6 +267,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":1300000,
+        "phone": "(836)786-7675",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -252,6 +284,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":1400000,
+        "phone": "(762)900-1611",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -267,6 +301,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38125,
+        "price":1100000,
+        "phone": "(849)511-8886",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -282,6 +318,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38139,
+        "price":999000,
+        "phone": "(151)006-1596",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -297,6 +335,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":1300000,
+        "phone": "(998)419-2957",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -312,6 +352,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38125,
+        "price":599000,
+        "phone": "(675)568-5312",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -327,6 +369,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38125,
+        "price":1500000,
+        "phone": "(372)189-0798",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -342,6 +386,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":1000000,
+        "phone": "(845)284-2290",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -357,6 +403,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":899000,
+        "phone": "(577)604-4611",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -372,6 +420,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38125,
+        "price":499000,
+        "phone": "(723)998-3445",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -387,6 +437,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38139,
+        "price":1400000,
+        "phone": "(353)951-4050",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -402,6 +454,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38027,
+        "price":1000000,
+        "phone": "(595)018-5541",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -417,6 +471,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":499000,
+        "phone": "(809)027-1381",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -432,6 +488,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38139,
+        "price":1000000,
+        "phone": "(280)654-1627",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -447,6 +505,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38017,
+        "price":1199000,
+        "phone": "(919)168-5615",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -462,6 +522,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38017,
+        "price":1500000,
+        "phone": "(588)062-4488",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -477,6 +539,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38125,
+        "price":499000,
+        "phone": "(828)973-8170",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -492,6 +556,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38125,
+        "price":1500000,
+        "phone": "(403)975-1626",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -507,6 +573,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38017,
+        "price":1500000,
+        "phone": "(620)835-9004",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -522,6 +590,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38139,
+        "price":1000000,
+        "phone": "(460)822-8505",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -537,6 +607,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38125,
+        "price":1000000,
+        "phone": "(620)818-5483",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -552,6 +624,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38017,
+        "price":1000000,
+        "phone": "(408)291-2038",
         "listing": "CRYE-LEIKE INC REALTORS"
     },
     {
@@ -567,6 +641,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38027,
+        "price":1100000,
+        "phone": "(529)169-0376",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -582,6 +658,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38017,
+        "price":499000,
+        "phone": "(806)966-9967",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -597,6 +675,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":1300000,
+        "phone": "(804)054-2599",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -612,6 +692,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38017,
+        "price":799000,
+        "phone": "(115)932-6088",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -627,6 +709,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38125,
+        "price":999000,
+        "phone": "(619)737-6822",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -642,6 +726,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":899000,
+        "phone": "(509)094-3296",
         "listing": "ADARO REALTY INC."
     },
     {
@@ -657,6 +743,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38017,
+        "price":899000,
+        "phone": "(434)991-5517",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -672,6 +760,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38125,
+        "price":899000,
+        "phone": "(434)991-5517",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -687,6 +777,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38027,
+        "price":999000,
+        "phone": "(820)725-2928",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -702,6 +794,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38017,
+        "price":1199000,
+        "phone": "(518)763-5077",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -717,6 +811,8 @@
         "city": "Germantown",
         "state": "TN",
         "zip": 38139,
+        "price":1199000,
+        "phone": "(518)763-5077",
         "listing": "JOHN GREEN REALTORS"
     },
     {
@@ -732,6 +828,8 @@
         "city": "Piperton",
         "state": "TN",
         "zip": 38017,
+        "price":1199000,
+        "phone": "(834)739-0477",
         "listing": "MIDSOUTH RESIDENTIAL LLC"
     },
     {
@@ -747,6 +845,8 @@
         "city": "Collierville",
         "state": "TN",
         "zip": 38139,
+        "price":499000,
+        "phone": "(234)664-5763",
         "listing": "ADARO REALTY INC."
     }
 ]

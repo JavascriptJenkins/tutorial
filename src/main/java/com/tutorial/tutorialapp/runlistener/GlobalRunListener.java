@@ -1,6 +1,7 @@
 package com.tutorial.tutorialapp.runlistener;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.tutorial.tutorialapp.model.RealEstate;
@@ -77,6 +78,7 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
         }
 
 
+        int houseIndex = 1;
         for(RealEstate realEstate: listRealEstate){
 
             RealEstate newObject = new RealEstate();
@@ -92,9 +94,12 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
             newObject.setCity(realEstate.getCity());
             newObject.setState(realEstate.getState());
             newObject.setZip(realEstate.getZip());
+            newObject.setPrice(realEstate.getPrice());
+            newObject.setPhone(realEstate.getPhone());
             newObject.setListing(realEstate.getListing());
+            newObject.setImageurl(String.format("house-%d.jpg", houseIndex++));
 
-            realEstateRepository.save(realEstate);
+            realEstateRepository.save(newObject);
         }
 
 
@@ -115,6 +120,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":560000,\n" +
+                "        \"phone\": \"(228)246-4920\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -130,6 +137,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":599000,\n" +
+                "        \"phone\": \"(229)243-4960\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -145,6 +154,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(222)984-1122\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -160,6 +171,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1100000,\n" +
+                "        \"phone\": \"(616)096-3603\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -175,6 +188,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":799000,\n" +
+                "        \"phone\": \"(819)579-2275\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -190,6 +205,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(923)625-6550\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -205,6 +222,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":1500000,\n" +
+                "        \"phone\": \"(324)173-8930\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -220,6 +239,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":899000,\n" +
+                "        \"phone\": \"(313)575-5002\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -235,6 +256,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":999000,\n" +
+                "        \"phone\": \"(206)863-2598\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -250,6 +273,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":499000,\n" +
+                "        \"phone\": \"(644)831-4804\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -265,6 +290,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":699000,\n" +
+                "        \"phone\": \"(652)859-5851\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -280,6 +307,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(707)884-3293\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -295,6 +324,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":1099000,\n" +
+                "        \"phone\": \"(532)773-1437\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -310,6 +341,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(660)900-6916\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -325,6 +358,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":1200000,\n" +
+                "        \"phone\": \"(511)571-8091\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -340,6 +375,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1300000,\n" +
+                "        \"phone\": \"(836)786-7675\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -355,6 +392,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1400000,\n" +
+                "        \"phone\": \"(762)900-1611\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -370,6 +409,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":1100000,\n" +
+                "        \"phone\": \"(849)511-8886\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -385,6 +426,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":999000,\n" +
+                "        \"phone\": \"(151)006-1596\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -400,6 +443,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1300000,\n" +
+                "        \"phone\": \"(998)419-2957\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -415,6 +460,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":599000,\n" +
+                "        \"phone\": \"(675)568-5312\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -430,6 +477,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":1500000,\n" +
+                "        \"phone\": \"(372)189-0798\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -445,6 +494,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(845)284-2290\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -460,6 +511,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":899000,\n" +
+                "        \"phone\": \"(577)604-4611\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -475,6 +528,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":499000,\n" +
+                "        \"phone\": \"(723)998-3445\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -490,6 +545,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":1400000,\n" +
+                "        \"phone\": \"(353)951-4050\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -505,6 +562,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(595)018-5541\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -520,6 +579,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":499000,\n" +
+                "        \"phone\": \"(809)027-1381\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -535,6 +596,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(280)654-1627\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -550,6 +613,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(919)168-5615\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -565,6 +630,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1500000,\n" +
+                "        \"phone\": \"(588)062-4488\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -580,6 +647,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":499000,\n" +
+                "        \"phone\": \"(828)973-8170\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -595,6 +664,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":1500000,\n" +
+                "        \"phone\": \"(403)975-1626\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -610,6 +681,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1500000,\n" +
+                "        \"phone\": \"(620)835-9004\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -625,6 +698,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(460)822-8505\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -640,6 +715,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(620)818-5483\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -655,6 +732,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1000000,\n" +
+                "        \"phone\": \"(408)291-2038\",\n" +
                 "        \"listing\": \"CRYE-LEIKE INC REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -670,6 +749,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":1100000,\n" +
+                "        \"phone\": \"(529)169-0376\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -685,6 +766,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":499000,\n" +
+                "        \"phone\": \"(806)966-9967\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -700,6 +783,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":1300000,\n" +
+                "        \"phone\": \"(804)054-2599\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -715,6 +800,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":799000,\n" +
+                "        \"phone\": \"(115)932-6088\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -730,6 +817,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":999000,\n" +
+                "        \"phone\": \"(619)737-6822\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -745,6 +834,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":899000,\n" +
+                "        \"phone\": \"(509)094-3296\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -760,6 +851,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":899000,\n" +
+                "        \"phone\": \"(434)991-5517\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -775,6 +868,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38125,\n" +
+                "        \"price\":899000,\n" +
+                "        \"phone\": \"(434)991-5517\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -790,6 +885,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38027,\n" +
+                "        \"price\":999000,\n" +
+                "        \"phone\": \"(820)725-2928\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -805,6 +902,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(518)763-5077\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -820,6 +919,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Germantown\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(518)763-5077\",\n" +
                 "        \"listing\": \"JOHN GREEN REALTORS\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -835,6 +936,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Piperton\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38017,\n" +
+                "        \"price\":1199000,\n" +
+                "        \"phone\": \"(834)739-0477\",\n" +
                 "        \"listing\": \"MIDSOUTH RESIDENTIAL LLC\"\n" +
                 "    },\n" +
                 "    {\n" +
@@ -850,6 +953,8 @@ public class GlobalRunListener implements ApplicationListener<ApplicationReadyEv
                 "        \"city\": \"Collierville\",\n" +
                 "        \"state\": \"TN\",\n" +
                 "        \"zip\": 38139,\n" +
+                "        \"price\":499000,\n" +
+                "        \"phone\": \"(234)664-5763\",\n" +
                 "        \"listing\": \"ADARO REALTY INC.\"\n" +
                 "    }\n" +
                 "]";

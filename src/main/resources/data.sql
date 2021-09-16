@@ -15,7 +15,10 @@ CREATE TABLE real_estate (
   city VARCHAR(250) NOT NULL,
   state VARCHAR(250) NOT NULL,
   zip INT NOT NULL,
-  listing VARCHAR(250) NOT NULL
+  price INT NOT NULL,
+  phone VARCHAR(250) NOT NULL,
+  listing VARCHAR(250) NOT NULL,
+  imageurl VARCHAR(250) NOT NULL
 );
 
 -- INSERT INTO real_estate (fname,
