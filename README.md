@@ -26,3 +26,10 @@
     http://3.21.225.172:8080/api/h2-console
 
     
+
+## To deploy
+    ssh -i /Users/genreboy/Downloads/LightsailDefaultKey-us-east-2.pem ubuntu@3.21.225.172
+    sudo killall java -9
+    sudo lsof -i :8080
+    scp -i /Users/genreboy/Downloads/LightsailDefaultKey-us-east-2.pem /Users/genreboy/IdeaProjects/tutorial/target/tutorialapp-0.0.1-SNAPSHOT.jar ubuntu@3.21.225.172:tutorialjava/
+    sudo nohup java -jar tutorialapp-0.0.1-SNAPSHOT.jar &
